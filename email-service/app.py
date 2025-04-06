@@ -31,9 +31,5 @@ def send_email():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# postmaster@sandbox72cb8948343d46bc97577a3262ef9971.mailgun.org
-# 76aca2af8fc0e5409247db802daded51-24bda9c7-1e2e00ef
-
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
